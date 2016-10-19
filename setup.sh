@@ -4,3 +4,5 @@ deb http://apt.kubernetes.io/ kubernetes-xenial main
 EOF
 apt-get update
 apt-get install -y docker.io kubelet kubeadm kubectl kubernetes-cni
+
+sudo usermod -aG docker $USER
